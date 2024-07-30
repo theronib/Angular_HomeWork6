@@ -1,0 +1,18 @@
+.images{
+    width: 300px;
+    margin-left: 20px;
+    border: 6px solid rgb(240, 216, 186);
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+#pictures{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+li{
+    list-style: none;
+    
+}

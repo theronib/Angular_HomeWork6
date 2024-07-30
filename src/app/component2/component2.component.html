@@ -1,0 +1,18 @@
+<div class="about" *ngIf="picture">
+    <p>Name: {{picture.name}}</p>
+    <p>Author: {{picture.author}}</p>
+    <p>Release year: {{picture.year}}</p>
+    <p>Dimensions: {{picture.size}}</p>
+    <p>Location: {{picture.location}}</p>
+    <img src="{{picture.pictureLink}}" alt="image" class="imagesdetailed">
+    <h3>Paintings of {{picture.author}}: </h3>
+</div>
+
+<div class="otherimg" *ngIf="authorPictures">
+    <div *ngFor="let picture of authorPictures">
+        <img [src]="picture.pictureLink" alt="image" class="otherimages"
+            (click)="redirectToAboutPage(picture.id, picture.authorID)">
+    </div>
+</div>
+
+<app-component1 [ngClass]="{invisible: true}"></app-component1>

@@ -1,0 +1,35 @@
+.about{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 30px;
+    color: white;
+    margin-left: 10px;
+}
+
+.imagesdetailed {
+    width: 500px;
+    border: 6px solid rgb(240, 216, 186);
+    margin-top: 40px;
+}
+
+.otherimages {
+    width: 150px;
+    margin-left: 10px;
+    margin-top: -10px;
+    border: 3px solid rgb(240, 216, 186);
+}
+
+li {
+    list-style: none;
+}
+
+.otherimg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 30px;
+    margin-top: -25px;
+}
+
+.invisible{
+    display: none;
+}

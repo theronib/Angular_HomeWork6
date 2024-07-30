@@ -1,0 +1,6 @@
+<div id="pictures">
+    <li *ngFor="let image of pictures | slice:0:5">
+        <img src="{{image.pictureLink}}" alt="image" class="images"
+            (click)="redirectToAboutPage(image.id, image.authorID)">
+    </li>
+</div>
